@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qurban Ali - Full Stack Developer, Designer & Content Creator. Portfolio showcasing projects, skills, and services.">
+    <title>Qurban Ali | Portfolio</title>
+    <link rel="icon" type="image/png" href="main.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Qurban</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#blogs">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
+            </div>
+            <svg class="hamburg" id="hamburgBtn" onclick="hamburg()" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style="cursor:pointer;position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--primary);display:none;"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <div class="links">
+                <a href="#home" onclick="closeMenu()">Home</a>
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#skills" onclick="closeMenu()">Skills</a>
+                <a href="#services" onclick="closeMenu()">Services</a>
+                <a href="#blogs" onclick="closeMenu()">Blogs</a>
+                <a href="#contact" onclick="closeMenu()">Contact Us</a>
+                <svg class="cancel" onclick="cancel()" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="cursor:pointer;color:white;position:absolute;top:15px;right:20px;"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="home-section">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2000">
+                <img src="main.png" alt="Qurban Ali">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">Hey I'm <span>Qurban</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="900">"Passionate developer crafting beautiful digital experiences. I turn ideas into reality through clean code, creative design, and innovative solutions that make a real difference."</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1100">
+                    <a href="https://github.com/newm73776-lgtm" target="_blank" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+                    <a href="https://www.facebook.com/QurbaanAli786" target="_blank" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="https://www.tiktok.com/@mr.__qurban" target="_blank" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="cv.html" target="_blank" class="cv-btn outline-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg> View CV</a>
+                    <a href="cv.html#download" class="cv-btn outline-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg> Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+            <h2>About <span>Me</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right" data-aos-duration="1200">
+                <img src="main.png" alt="Qurban Ali">
+                <div class="experience-badge">
+                    <span class="num">2+</span>
+                    <span class="text">Years Experience</span>
+                </div>
+            </div>
+            <div class="about-content" data-aos="fade-left" data-aos-duration="1200">
+                <h3>I'm <span>Qurban Ali</span> – Full Stack Developer</h3>
+                <p>I am a passionate and dedicated Full Stack Developer with a strong background in web development, UI/UX design, and digital content creation. I love building modern, responsive, and user-friendly web applications that solve real-world problems.</p>
+                <p>With expertise in both front-end and back-end technologies, I craft seamless digital experiences that combine functionality with aesthetics. I am constantly learning and adapting to emerging technologies to deliver cutting-edge solutions.</p>
+
+                <div class="about-info">
+                    <div class="info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                        <div>
+                            <span class="label">Name:</span>
+                            <span class="value">Qurban Ali</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <div>
+                            <span class="label">Email:</span>
+                            <span class="value">mrqurbaan@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        <div>
+                            <span class="label">Website:</span>
+                            <span class="value"><a href="https://sim-info-ruby.vercel.app" target="_blank">sim-info-ruby.vercel.app</a></span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <div>
+                            <span class="label">Location:</span>
+                            <span class="value">Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-btns">
+                    <a href="#contact" class="primary-btn">Hire Me</a>
+                    <a href="cv.html" target="_blank" class="secondary-btn">My CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills-section">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+            <h2>My <span>Skills</span></h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-text" data-aos="fade-right" data-aos-duration="1200">
+                <h3>My Technical <span>Expertise</span></h3>
+                <p>I have honed my skills across a wide range of web technologies and tools. My expertise spans from front-end development to back-end systems, enabling me to build complete and robust digital solutions.</p>
+                <p>I continuously update my skill set to stay current with industry trends and best practices.</p>
+            </div>
+            <div class="skills-bars" data-aos="fade-left" data-aos-duration="1200">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML & CSS</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>React.js</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Node.js</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>UI/UX Design</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Icons -->
+        <div class="tech-icons" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <div class="tech-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg><span>HTML5</span></div>
+            <div class="tech-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg><span>CSS3</span></div>
+            <div class="tech-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.625-1.065-2.665-.975-1.215.12-2.115.81-2.46 1.8-.24.69-.165 1.29.225 2.01.51.90 1.26 1.155 2.355 1.575.66.24.795.585.69.96-.09.465-.54.66-1.155.54-.405-.075-.75-.24-1.095-.6l-1.635 1.17c.195.3.465.57.795.855 1.245.93 3.195.855 4.485-.48.75-.675 1.065-1.68.675-2.73zM8.49 15.09l-1.875 1.35c-.33.24-.645.465-.93.465-.285 0-.39-.195-.345-.66l.06-.36 1.44-7.11h-2.1l-.285 1.44c-.165.825-.315 1.575-.465 2.37-.03-.09-.66-2.37-.66-2.37h-2.25l1.215 6.075c.165.855.195 1.08.18 1.305-.015.285-.165.51-.525.54-.18.015-.495-.015-.735-.045l-.285 1.53c.495.12 1.005.15 1.515.12 1.14-.06 1.74-.45 2.01-1.35l.255-.795 1.995-8.355H8.49v.001z"/></svg><span>JavaScript</span></div>
+            <div class="tech-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2.4c5.302 0 9.6 4.298 9.6 9.6s-4.298 9.6-9.6 9.6-9.6-4.298-9.6-9.6 4.298-9.6 9.6-9.6zm.42 4.8c-2.676 0-4.86 1.836-4.86 4.08 0 1.284.678 2.16 1.836 2.556.192.048.366-.084.42-.276.048-.168.036-.3.024-.444-.024-.168-.108-.204-.216-.252-.444-.168-.696-.456-.696-1.02 0-1.092.984-1.932 2.304-1.932 1.176 0 1.92.672 1.92 1.608 0 1.236-.528 2.076-1.296 2.076-.444 0-.756-.24-.648-.756.12-.504.348-.996.348-1.356 0-.324-.18-.6-.552-.6-.444 0-.792.456-.792 1.08 0 .396.132.66.132.66l-.54 2.16c-.168.672-.048 1.5-.048 1.584 0 .06.084.084.12.084.444 0 1.596-1.848 1.596-3.264 0-1.512-.888-2.328-2.196-2.328-1.5 0-2.592 1.14-2.592 2.64 0 .456.132.924.348 1.176.048.06.06.108.048.168-.036.18-.12.552-.144.708-.024.072-.06.084-.156.048-.576-.432-.936-1.116-.936-2.22 0-1.896 1.596-4.02 4.752-4.02 2.508 0 4.164 1.8 4.164 3.72 0 2.52-1.404 4.416-3.48 4.416-.696 0-1.356-.36-1.572-.804l-.456 1.74c-.18.576-.624 1.296-1.008 1.728 1.356.42 2.784.648 4.272.648 3.708 0 6.696-2.196 6.696-6.216.012-3.3-2.304-6.084-5.712-6.084z"/></svg><span>React</span></div>
+            <div class="tech-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.002 0C5.375 0 0 5.373 0 12.002c0 5.287 3.435 9.77 8.197 11.37.602.11.82-.26.82-.578 0-.286-.01-1.04-.015-2.04-3.338.724-4.043-1.61-4.043-1.61-.546-1.387-1.332-1.756-1.332-1.756-1.09-.745.082-.73.082-.73 1.205.086 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.42-1.305.76-1.605-2.665-.305-5.467-1.334-5.467-5.932 0-1.31.468-2.382 1.235-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.51 11.51 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.29-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.92.43.372.814 1.103.814 2.222 0 1.606-.015 2.898-.015 3.293 0 .32.218.694.825.578C20.565 21.77 24 17.287 24 12.002 24 5.373 18.63 0 12.002 0z"/></svg><span>Node.js</span></div>
+            <div class="tech-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.3-.09.29-.14.28-.19.27-.24.26-.3.25-.36.24-.41.22-.47.2-.53.18-.58.16-.64.14-.69.11-.74.09-.78.07-.84.04-.88.02H8.83l-.88-.02-.84-.04-.78-.07-.74-.09-.7-.11-.64-.14-.58-.16-.53-.18-.47-.2-.41-.22-.36-.24-.3-.25-.24-.26-.19-.27-.14-.28-.09-.29-.05-.3V2.13l.01-.13.02-.2.06-.26.1-.3.16-.33.25-.34.34-.34.45-.32.59-.3.73-.26.9-.2 1.27-.14 1.52-.06H14.25zm-3.12 5.56c-.45 0-.86.12-1.21.36-.35.24-.63.58-.84 1.02-.21.44-.33.96-.36 1.56l2.65.38c.03-.42.13-.76.3-1.02.17-.26.39-.39.67-.39.28 0 .5.1.67.29.17.19.25.48.25.87 0 .37-.08.69-.25.95-.17.26-.41.52-.73.78l-1.37 1.09c-.51.4-.9.84-1.18 1.3-.28.46-.42 1.05-.42 1.77v.71h2.66v-.57c0-.42.08-.74.25-.97.17-.23.42-.48.75-.75l1.35-1.1c.86-.69 1.43-1.39 1.71-2.1.28-.71.42-1.47.42-2.28 0-.78-.14-1.45-.42-2.01-.28-.56-.68-.99-1.2-1.28-.52-.3-1.13-.45-1.84-.45zm1.76 8.39v2.06H9.11V14.13h3.78z"/></svg><span>Python</span></div>
+            <div class="tech-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.89 2.28c-.31-.25-.74-.25-1.04 0l-1.77 1.46c-.03.02-.05.04-.07.06L.454 10.93c-.47.39-.47 1.1 0 1.48l9.66 8.65c.31.25.74.25 1.04 0l9.66-8.65c.47-.38.47-1.09 0-1.48zM12 19.23l-7.2-6.43L12 6.37l7.2 6.43L12 19.23zm5.21-11.05c-.03.06-.07.11-.13.16l-5.08 4.53V14l5.08-4.53c.06-.05.1-.1.13-.16.02-.04.03-.08.03-.12 0-.11-.07-.21-.18-.26-.1-.05-.22-.05-.32 0-.1.05-.18.15-.18.26 0 .04.01.08.03.12zM6.79 8.18c.03.05.07.11.13.16l5.08 4.53V14l-5.08-4.53c-.06-.05-.1-.1-.13-.16-.02-.04-.03-.08-.03-.12 0-.11.07-.21.18-.26.1-.05.22-.05.32 0 .1.05.18.15.18.26 0 .04-.01.08-.03.12z"/></svg><span>Git</span></div>
+            <div class="tech-card"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.5 17.25c0 .69-.56 1.25-1.25 1.25h-6.5c-.69 0-1.25-.56-1.25-1.25V6.75c0-.69.56-1.25 1.25-1.25h6.5c.69 0 1.25.56 1.25 1.25v10.5zM9 9h6v1.5H9V9zm0 3h6v1.5H9V12zm0 3h4.5v1.5H9V15z"/></svg><span>Figma</span></div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="services-section">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+            <h2>My <span>Services</span></h2>
+            <div class="underline"></div>
+        </div>
+        <p class="section-sub" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">I offer a wide range of professional services to help you build your digital presence and grow your business online.</p>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg></div>
+                <h3>Web Development</h3>
+                <p>Building fast, responsive, and modern websites using cutting-edge technologies like React, Node.js, and more.</p>
+                <a href="https://sim-info-ruby.vercel.app" target="_blank" class="service-link">View Project <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></a>
+            </div>
+            <div class="service-card featured" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg></div>
+                <h3>SIM Info Tool</h3>
+                <p>A powerful SIM information lookup tool built with modern web technologies — check out my live project!</p>
+                <a href="https://sim-info-ruby.vercel.app" target="_blank" class="service-link">Visit Live Site <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .89-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg></a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></div>
+                <h3>UI/UX Design</h3>
+                <p>Creating beautiful, intuitive, and user-centric designs that enhance user experience and brand identity.</p>
+                <a href="#contact" class="service-link">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4 3h16c.55 0 1 .45 1 1v16c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1zm2 4v12h12V7H6zm2 2h2v2H8V9zm0 4h2v2H8v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z"/></svg></div>
+                <h3>Backend Development</h3>
+                <p>Developing robust APIs, databases, and server-side logic to power your web applications.</p>
+                <a href="#contact" class="service-link">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></div>
+                <h3>Content Creation</h3>
+                <p>Producing engaging digital content, tutorials, and educational resources for various platforms.</p>
+                <a href="#contact" class="service-link">Learn More <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></div>
+                <h3>SEO Optimization</h3>
+                <p>Optimizing websites for search engines to improve visibility, traffic, and online presence.</p>
+                <a href="#contact" class="service-link">Get a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOGS SECTION ===== -->
+    <section id="blogs" class="blogs-section">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Latest <span>Blogs</span></h2>
+            <div class="underline"></div>
+        </div>
+        <p class="section-sub" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">I write about web development, design, and technology. Here are some of my latest articles.</p>
+        <div class="blogs-grid">
+            <div class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="blog-img">
+                    <div class="blog-placeholder blog-1"></div>
+                    <div class="blog-tag">Web Dev</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2h-1V1m-1 11h-5v5h5v-5z"/></svg> Feb 2026</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 5 min read</span>
+                    </div>
+                    <h3>Building Modern Websites with React.js</h3>
+                    <p>Learn how to build fast, scalable, and beautiful web applications using React.js and modern JavaScript.</p>
+                    <a href="#" class="blog-link">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></a>
+                </div>
+            </div>
+            <div class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="blog-img">
+                    <div class="blog-placeholder blog-2"></div>
+                    <div class="blog-tag">Design</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2h-1V1m-1 11h-5v5h5v-5z"/></svg> Jan 2026</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 7 min read</span>
+                    </div>
+                    <h3>UI/UX Design Principles for Developers</h3>
+                    <p>Discover the key design principles that every developer should know to create better user interfaces.</p>
+                    <a href="#" class="blog-link">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></a>
+                </div>
+            </div>
+            <div class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="blog-img">
+                    <div class="blog-placeholder blog-3"></div>
+                    <div class="blog-tag">CSS</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2h-1V1m-1 11h-5v5h5v-5z"/></svg> Dec 2025</span>
+                        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> 4 min read</span>
+                    </div>
+                    <h3>Advanced CSS Animations & Effects</h3>
+                    <p>Master the art of CSS animations to create stunning visual effects that delight your users.</p>
+                    <a href="#" class="blog-link">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Contact <span>Me</span></h2>
+            <div class="underline"></div>
+        </div>
+        <p class="section-sub" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Have a project in mind or want to collaborate? I'd love to hear from you. Let's build something amazing together!</p>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="1200">
+                <h3>Get In <span>Touch</span></h3>
+                <div class="contact-detail">
+                    <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>mrqurbaan@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+92 300 12237137</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+                    <div>
+                        <h4>Website</h4>
+                        <p><a href="https://sim-info-ruby.vercel.app" target="_blank">sim-info-ruby.vercel.app</a></p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Pakistan</p>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://github.com/newm73776-lgtm" target="_blank" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+                    <a href="https://www.facebook.com/QurbaanAli786" target="_blank" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="https://www.tiktok.com/@mr.__qurban" target="_blank" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-left" data-aos-duration="1200">
+                <form id="contactForm" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required autocomplete="name">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required autocomplete="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required autocomplete="off">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required autocomplete="off"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg> Send Message
+                    </button>
+                    <div id="formMsg" class="form-msg"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span>Qurban</span>
+                <p>Full Stack Developer & Designer</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/newm73776-lgtm" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+                <a href="https://www.facebook.com/QurbaanAli786" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="https://www.tiktok.com/@mr.__qurban" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <span>Qurban Ali</span>. All Rights Reserved.</p>
+            <p>Designed & Built with <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> by Qurban</p>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
